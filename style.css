@@ -221,9 +221,18 @@ main {
   text-align: center;
 }
 
+.container-contacts {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
 .contact-container-main {
   display: flex;
   justify-content: center;
+
+  gap: 20px;
 }
 
 .contact-msg {
@@ -232,35 +241,33 @@ main {
   font-size: 15px;
   color: #f79831;
   font-weight: bold;
-  margin-top: 10px;
 }
 
 .contact-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  width: 270px;
-  align-items: center;
-  justify-content: space-around;
   color: #005952;
-  font-size: 15px;
+  font-size: 16px;
   font-family: 'Source Sans Pro', sans-serif;
-  border: solid;
-  border-style: outset;
-  border-radius: 20px;
-  margin: 10px;
+  border: outset 3px;
+  border-radius: 14px;
   padding: 10px 5px;
+
+  gap: 10px;
 }
 
 .contact-image {
-  width: 130px;
-  border-radius: 180px;
-  padding: 5px;
+  height: 130px;
+  border-radius: 100%;
 }
 
 .contact-description {
   padding: 22px;
   text-align: center;
   color: #005952;
+
+  height: 20%;
 }
 
 .contact-cel {
@@ -394,6 +401,28 @@ main {
     font-size: 12px;
     padding: 2px;
   }
+
+  .contact-msg {
+    font-size: 12px;
+  }
+
+  .contact-container {
+    font-size: 12px;
+  }
+
+  .contact-image {
+    height: 100px;
+    border-radius: 180px;
+    padding: 5px;
+  }
+
+  .contact-description {
+    padding: 10px;
+  }
+
+  .contact-cel {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -428,6 +457,10 @@ main {
     font-size: 10px;
   }
 
+  .service-local {
+    font-size: 12px;
+  }
+
   .service-image {
     display: flex;
     width: 50%;
@@ -441,5 +474,34 @@ main {
   .service-description {
     font-size: 10px;
     padding: 0;
+  }
+
+  .contact-msg {
+    font-size: 8px;
+  }
+
+  .contact-container-main {
+    flex-direction: column;
+  }
+
+  .contact-container {
+    font-size: 14px;
+  }
+
+  .contact-image {
+    height: 100px;
+    border-radius: 180px;
+    padding: 5px;
+  }
+
+  .contact-description {
+    padding: 8px;
+    font-size: 14px;
+
+    height: 30%;
+  }
+
+  .contact-cel {
+    font-size: 16px;
   }
 }
