@@ -270,9 +270,9 @@ showInMain = (list, evt) => {
   container.innerHTML = '';
   createServices(list);
   eventsBtn();
+  const allNavs = document.querySelectorAll('.a-nav');
+  allNavs.forEach((nav) => nav.classList.remove('isActive'));
   if (evt.target) {
-    const allNavs = document.querySelectorAll('.a-nav');
-    allNavs.forEach((nav) => nav.classList.remove('isActive'));
     evt.target.classList.add('isActive');
   }
 };
