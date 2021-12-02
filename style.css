@@ -18,7 +18,7 @@ main {
 .main-container {
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding: 10px 40px 40px;
   flex-wrap: wrap;
 
   gap: 40px;
@@ -183,14 +183,14 @@ main {
 .service-container {
   display: flex;
   justify-content: space-around;
-  padding: 40px 20px;
+  padding: 20px 10px;
 
   border-radius: 6px;
 
   -webkit-box-shadow: -5px 6px 15px -2px #005952;
   box-shadow: -5px 6px 15px -2px #005952;
 
-  width: 40%;
+  width: 45%;
 }
 
 .text-container {
@@ -199,12 +199,12 @@ main {
   align-items: center;
   justify-content: center;
 
-  width: 50%;
+  width: 40%;
 }
 
 .service-image {
   display: flex;
-  width: 40%;
+  width: 50%;
   border-radius: 10px;
 }
 

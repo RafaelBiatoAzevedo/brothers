@@ -240,14 +240,22 @@ createElementContacts = (obj) => {
 createContacts = () => {
   const container = document.querySelector('#containerMain');
   container.innerHTML = '';
+
   const divMain = document.createElement('div');
-  divMain.className = 'contact-container-main';
-  divMain.id = 'contactContainerMain';
+  divMain.className = 'container-contacts';
+  divMain.id = 'container-contacts';
+
+  const div = document.createElement('div');
+  div.className = 'contact-container-main';
+  div.id = 'contactContainerMain';
+
   const p = document.createElement('p');
   p.className = 'contact-msg';
   p.innerText =
     '>> Mande mensagem ou ligue para um de nossos profissionais para agendar uma visita <<';
-  container.appendChild(p);
+
+  divMain.appendChild(p);
+  divMain.appendChild(div);
   container.appendChild(divMain);
   professionals.forEach((profi) => createElementContacts(profi));
 };
