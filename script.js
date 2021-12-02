@@ -282,9 +282,9 @@ showCompany = () => {
   container.innerHTML = '';
   const div = document.createElement('div');
   div.className = 'logo-description';
-  const h3 = document.createElement('h3');
-  h3.innerText = 'Informações';
-  h3.className = 'subtitle logoSubtitle';
+  const h2 = document.createElement('h2');
+  h2.innerText = 'Informações';
+  h2.className = 'subtitle logoSubtitle';
   const paragraph = document.createElement('p');
   paragraph.innerText =
     'Logo criado em Free Logo Maker. \n' +
@@ -295,7 +295,7 @@ showCompany = () => {
     'Rua Cleonice Ap. Cruz Thielle, 350 - Jd Alvorada - Mogi-Guaçu - SP\n' +
     'Emails: rafaelazevedo321@gmail.com / azevedodigital321@gmail.com';
   paragraph.className = 'paragraph-logo';
-  div.appendChild(h3);
+  div.appendChild(h2);
   div.appendChild(paragraph);
   container.appendChild(div);
 };
