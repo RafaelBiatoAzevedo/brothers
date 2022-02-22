@@ -102,14 +102,21 @@ main {
   border-radius: 30px;
   padding: 6px 20px;
   background-color: #f79831;
+  border: solid 2px #fff;
   color: #005952;
   font-weight: bold;
   cursor: pointer;
 }
 
+.btn-order:hover {
+  border: solid 2px #005952;
+}
+
 .service-btn {
   padding: 6px 20px;
   font-size: 14px;
+
+  justify-self: flex-end;
 }
 
 .span-button {
@@ -193,7 +200,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 10px 0;
 
   width: 40%;
 }
